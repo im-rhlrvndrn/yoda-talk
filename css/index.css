@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../assets/yoda_in_star_wars_battlefront_4k.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: cover;
+    background: url(../assets/yoda_mobile.jpg);
+  }
+}
+
+body .mainApp {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+  body .mainApp {
+    padding-left: 1rem;
+  }
+}
+
+body .mainApp button {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+body .mainApp button:focus {
+  outline: none;
+}
+
+body .mainApp input {
+  padding: 2rem 1.5rem;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+body .mainApp input:focus {
+  outline: none;
+}
+
+body .mainApp input,
+body .mainApp button {
+  border-radius: 5px;
+}
+
+body .mainApp h1 {
+  color: #5bb858;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  body .mainApp h1 {
+    font-size: 3rem;
+    color: #5bb858;
+  }
+}
+
+body .mainApp .play {
+  background-color: #5bb858;
+}
+
+body .mainApp #translationButton {
+  color: #222;
+  display: block;
+  background-color: #5bb858;
+}
+
+@media screen and (max-width: 500px) {
+  body .mainApp #translationButton {
+    color: #eee;
+    background-color: #5bb858;
+  }
+}
+
+body .mainApp #errorText {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(211, 63, 73, 0.8);
+  color: #5bb858;
+}
+/*# sourceMappingURL=index.css.map */
